@@ -1,0 +1,16 @@
+{
+  "name": "ng-devices",
+  "version": "0.0.1",
+  "keywords": ["Angular","Marvel Prototyping", "Device", "Mockup"],
+  "author": "Andre Lehnert",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andre-lehnert/ng-devices/issues"
+  },
+  "homepage": "https://github.com/andre-lehnert/ng-devices",
+  "peerDependencies": {
+    "@angular/platform-browser": "~7.2.0",
+    "@angular/common": "~7.2.0",
+    "@angular/core": "~7.2.0"
+  }
+}

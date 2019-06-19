@@ -1,0 +1,158 @@
+<div style="display: flex; flex-direction: column; align-items: center; background: radial-gradient(ellipse at 50% 50%, #f8f8f8 50%, #d9d9d9); padding: 1vw;" >
+
+ <ng-template #content><ng-content></ng-content></ng-template>
+
+
+ <!-- iPad -->
+ <div *ngIf="isSelected(Device.APPLE_IPAD_MINI)" class="marvel-device ipad silver" [ngClass]="landscapeMode">
+  <div class="camera"></div>
+  <div class="screen">
+   <!-- Content goes here -->
+   <ng-container *ngTemplateOutlet="content"></ng-container>
+  </div>
+  <div class="home"></div>
+ </div>
+
+
+
+ <!-- Galaxy Note 8 -->
+ <div *ngIf="isSelected(Device.SAMSUNG_GALAXY_NOTE8)" class="marvel-device note8" [ngClass]="landscapeMode">
+  <div class="inner"></div>
+  <div class="overflow">
+   <div class="shadow"></div>
+  </div>
+  <div class="speaker"></div>
+  <div class="sensors"></div>
+  <div class="more-sensors"></div>
+  <div class="sleep"></div>
+  <div class="volume"></div>
+  <div class="camera"></div>
+  <div class="screen">
+   <!-- Content goes here -->
+   <ng-container *ngTemplateOutlet="content"></ng-container>
+  </div>
+ </div>
+
+ <!-- Galaxy S5 -->
+ <div *ngIf="isSelected(Device.SAMSUNG_GALAXY_S5)"  class="marvel-device s5 white" [ngClass]="landscapeMode">
+  <div class="top-bar"></div>
+  <div class="sleep"></div>
+  <div class="camera"></div>
+  <div class="sensor"></div>
+  <div class="speaker"></div>
+  <div class="screen">
+   <!-- Content goes here -->
+   <ng-container *ngTemplateOutlet="content"></ng-container>
+  </div>
+  <div class="home"></div>
+ </div>
+
+ <!-- HTC One -->
+ <div *ngIf="isSelected(Device.HTC_ONE)"  class="marvel-device htc-one" [ngClass]="landscapeMode">
+  <div class="top-bar"></div>
+  <div class="camera"></div>
+  <div class="sensor"></div>
+  <div class="speaker"></div>
+  <div class="screen">
+   <!-- Content goes here -->
+   <ng-container *ngTemplateOutlet="content"></ng-container>
+  </div>
+ </div>
+
+
+ <!-- iPhone X -->
+ <div *ngIf="isSelected(Device.APPLE_IPHONE_X)" class="marvel-device iphone-x" [ngClass]="landscapeMode">
+  <div class="notch">
+   <div class="camera"></div>
+   <div class="speaker"></div>
+  </div>
+  <div class="top-bar"></div>
+  <div class="sleep"></div>
+  <div class="bottom-bar"></div>
+  <div class="volume"></div>
+  <div class="overflow">
+   <div class="shadow shadow--tr"></div>
+   <div class="shadow shadow--tl"></div>
+   <div class="shadow shadow--br"></div>
+   <div class="shadow shadow--bl"></div>
+  </div>
+  <div class="inner-shadow"></div>
+  <div class="screen" >
+   <!-- Content goes here -->
+   <ng-container *ngTemplateOutlet="content"></ng-container>
+  </div>
+ </div>
+
+ <!-- iPhone 5S -->
+ <div *ngIf="isSelected(Device.APPLE_IPHONE_5S)" class="marvel-device iphone5s silver" [ngClass]="landscapeMode">
+  <div class="top-bar"></div>
+  <div class="sleep"></div>
+  <div class="volume"></div>
+  <div class="camera"></div>
+  <div class="sensor"></div>
+  <div class="speaker"></div>
+  <div class="screen">
+   <!-- Content goes here -->
+   <ng-container *ngTemplateOutlet="content"></ng-container>
+  </div>
+  <div class="home"></div>
+  <div class="bottom-bar"></div>
+ </div>
+
+ <!-- iPhone 8 -->
+ <div  *ngIf="isSelected(Device.APPLE_IPHONE_8)"  class="marvel-device iphone8 silver" [ngClass]="landscapeMode">
+  <div class="top-bar"></div>
+  <div class="sleep"></div>
+  <div class="volume"></div>
+  <div class="camera"></div>
+  <div class="sensor"></div>
+  <div class="speaker"></div>
+  <div class="screen">
+   <!-- Content goes here -->
+   <ng-container *ngTemplateOutlet="content"></ng-container>
+  </div>
+  <div class="home"></div>
+  <div class="bottom-bar"></div>
+ </div>
+
+ <!-- iPhone 8+ -->
+ <div *ngIf="isSelected(Device.APPLE_IPHONE_8PLUS)" class="marvel-device iphone8plus silver" [ngClass]="landscapeMode">
+  <div class="top-bar"></div>
+  <div class="sleep"></div>
+  <div class="volume"></div>
+  <div class="camera"></div>
+  <div class="sensor"></div>
+  <div class="speaker"></div>
+  <div class="screen">
+   <!-- Content goes here -->
+   <ng-container *ngTemplateOutlet="content"></ng-container>
+  </div>
+  <div class="home"></div>
+  <div class="bottom-bar"></div>
+ </div>
+
+ <!-- MacBook Pro -->
+ <div  *ngIf="isSelected(Device.APPLE_MACBOOK_PRO)" class="marvel-device macbook" [ngClass]="landscapeMode">
+  <div class="top-bar"></div>
+  <div class="camera"></div>
+  <div class="screen">
+   <!-- Content goes here -->
+   <ng-container *ngTemplateOutlet="content"></ng-container>
+  </div>
+  <div class="bottom-bar"></div>
+ </div>
+
+ <!-- Nexus 5 -->
+ <div  *ngIf="isSelected(Device.GOOGLE_NEXUS_5)" class="marvel-device nexus5" [ngClass]="landscapeMode">
+  <div class="top-bar"></div>
+  <div class="sleep"></div>
+  <div class="volume"></div>
+  <div class="camera"></div>
+  <div class="screen">
+   <!-- Content goes here -->
+   <ng-container *ngTemplateOutlet="content"></ng-container>
+  </div>
+ </div>
+
+</div>
+

@@ -1,0 +1,37 @@
+h1 {
+ font-size: 5rem;
+}
+
+.container {
+ margin: 1vw;
+
+ display: flex;
+ flex-wrap: wrap;
+}
+
+.container > * {
+ flex-grow: 1;
+
+ flex-basis: calc((40rem - 100%) * 999);
+
+ margin: 1rem;
+}
+/*
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { font-size: 3vw;
+ color: #f00; }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { font-size: 5vw;
+ color: #ff0; }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {font-size: 7vw;
+ color: #f0f; }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {font-size: 10vw;
+ color: #0ff;  }
+
+*/
