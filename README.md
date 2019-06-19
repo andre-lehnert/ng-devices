@@ -4,6 +4,7 @@
 
 Demo: https://andre-lehnert.github.io/ng-devices/
 
+
 ## ng-devices library
 
 Requires peer dependency: Angular ~7.2.0
