@@ -1,0 +1,28 @@
+language: node_js
+node_js:
+  - "10"
+
+sudo: false
+dist: trusty
+
+branches:
+  only:
+    - master
+
+jobs:
+  include:
+    - stage: Build and deploy application
+      script:
+        - npm install
+        - ng build ng-devices
+        - ng build --deployUrl="/ng-devices/" --baseHref="https://andre-lehnert.github.io/ng-devices/" --prod
+      # DEPLOY GITHUB PAGES
+      deploy:
+        provider: pages
+        skip_cleanup: true
+        github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
+        local_dir: dist/angular-devices
+        verbose: true
+        keep-history: true
+        on:
+          branch: master
