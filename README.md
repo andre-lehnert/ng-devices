@@ -1,4 +1,9 @@
 # Angular Devices
+
+https://travis-ci.org/andre-lehnert/ng-devices.svg?branch=master
+
+Demo: https://andre-lehnert.github.io/ng-devices/
+
 ## ng-devices library
 
 Requires peer dependency: Angular ~7.2.0
