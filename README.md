@@ -1,6 +1,6 @@
 # Angular Devices
 
-https://travis-ci.org/andre-lehnert/ng-devices.svg?branch=master
+[![Build Status](https://travis-ci.org/andre-lehnert/ng-devices.svg?branch=master)](https://travis-ci.org/andre-lehnert/ng-devices)
 
 Demo: https://andre-lehnert.github.io/ng-devices/
 
