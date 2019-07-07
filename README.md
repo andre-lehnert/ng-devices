@@ -87,12 +87,16 @@ Minimal HTML:
 
 ## angular-devices web component
 
+Demo: https://andre-lehnert.github.io/ng-devices/assets/web-component/
+
 - [Medium Article 1](https://medium.com/@kitson.mac/wrapping-an-angular-app-in-a-custom-element-web-component-angular-element-in-4-simple-steps-ded3554e9006)
 - [Medium Article 2](https://medium.com/@tomsu/building-web-components-with-angular-elements-746cd2a38d5b)
 - [@webcomponents/webcomponentsjs ployfills](https://github.com/webcomponents/polyfills/tree/master/packages/webcomponentsjs)
+- [Zone.js problems](https://blog.bitsrc.io/how-angular-uses-ngzone-zone-js-for-dirty-checking-faa12f98cd49)
 
 `npm run package` to generate the angular-devices.js file in the root folder
 
 `http-server -o` to provide the index.html in the root folder
 
-Optional `npm run package:gzip` to reduce the file size to 60 KB
+Optional `npm run package:gzip` to reduce the file size from 240 KB to 60 KB.
+The http server have to support `content-encoding: gzip` response headers.

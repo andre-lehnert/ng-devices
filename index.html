@@ -5,7 +5,7 @@
  <title>Angular Web Element Example</title>
  <base href="/">
  <meta name="viewport" content="width=device-width, initial-scale=1">
- <link rel="icon" type="image/x-icon" href="./src/favicon.ico">
+ <link rel="icon" type="image/x-icon" href="../../src/favicon.ico">
 
  <!-- use zone dependency of the package.json -->
  <!-- zone.js was removed from the polyfills.ts file to support an embedding into other angular apps -->
@@ -13,10 +13,21 @@
 </head>
 <body>
 
+<header>
+ <h1>Angular Web Element Example</h1>
+</header>
 
-<angular-device></angular-device>
+<main style="margin: 3em 0; border: 5px dashed darkred">
+
+ <angular-device></angular-device>
+
+</main>
+
+<footer>
+ Use angular-devices.js to provide the "angular-device" tag.
+</footer>
+
 <script type="text/javascript" src="angular-devices.js"></script>
-
 
 </body>
 </html>
