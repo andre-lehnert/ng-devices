@@ -83,3 +83,8 @@ Minimal HTML:
 ```
 <ng-device></ng-device>
 ```
+
+
+## angular-devices web component
+
+[Article 1](https://medium.com/@kitson.mac/wrapping-an-angular-app-in-a-custom-element-web-component-angular-element-in-4-simple-steps-ded3554e9006)

@@ -1,5 +1,5 @@
-import { NgModule } from '@angular/core';
-import { NgDeviceComponent } from './ng-device.component';
+import {NgModule} from '@angular/core';
+import {NgDeviceComponent} from './ng-device.component';
 import {BrowserModule} from '@angular/platform-browser';
 
 @NgModule({
@@ -9,4 +9,5 @@ import {BrowserModule} from '@angular/platform-browser';
   ],
   exports: [NgDeviceComponent]
 })
-export class NgDeviceModule { }
+export class NgDeviceModule {
+}

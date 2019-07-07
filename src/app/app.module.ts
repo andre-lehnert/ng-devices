@@ -1,9 +1,10 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {Injector, NgModule} from '@angular/core';
 
-import { AppComponent } from './app.component';
+import {AppComponent} from './app.component';
 import {NgDeviceModule} from '../../projects/ng-devices/src/lib/ng-device.module';
-import { ContentComponent } from './content/content.component';
+import {ContentComponent} from './content/content.component';
+import {createCustomElement} from '@angular/elements';
 
 @NgModule({
   declarations: [
@@ -17,4 +18,9 @@ import { ContentComponent } from './content/content.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(private injector: Injector) {
+    const ngDevices = createCustomElement(AppComponent, { injector });
+    customElements.define('angular-devices', ngDevices)
+  }
+}

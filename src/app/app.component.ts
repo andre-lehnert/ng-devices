@@ -1,8 +1,8 @@
-import {Component} from '@angular/core';
+import {Component, ViewEncapsulation} from '@angular/core';
 import {Device} from '@ng-devices';
 
 @Component({
-  selector: 'angular-device-root',
+  selector: 'angular-device',
   template: `
       <div>
         <ng-device [device]="selectedDevice" [landscape]="landscapeMode">
@@ -26,7 +26,8 @@ import {Device} from '@ng-devices';
         <button type="button" (click)="changeDevice(Device.APPLE_MACBOOK_PRO)">MacBook Pro</button>          
       </div>
   `,
-  styles: []
+  styles: [],
+  encapsulation: ViewEncapsulation.ShadowDom
 })
 export class AppComponent {
   public Device = Device;

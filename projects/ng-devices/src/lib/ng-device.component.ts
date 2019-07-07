@@ -1,11 +1,12 @@
-import {Component, Input, OnChanges, OnInit, SimpleChanges} from '@angular/core';
+import {Component, Input, OnChanges, OnInit, SimpleChanges, ViewEncapsulation} from '@angular/core';
 import {Device} from './device.enum';
 
 @Component({
   selector: 'ng-device',
   templateUrl: './ng-device.component.html',
   styleUrls: ['../assets/marvel-devices.min.css'],
-  styles: []
+  styles: [],
+  encapsulation: ViewEncapsulation.ShadowDom
 })
 export class NgDeviceComponent implements OnInit, OnChanges {
 

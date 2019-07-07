@@ -4,13 +4,20 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --prod --output-hashing=none",
+    "package": "npm run build && cat ./dist/angular-devices/{runtime,polyfills,scripts,main}.js > ./angular-devices.js",
+    "package:gzip": "npm run package && cat ./angular-devices.js | gzip > ./angular-devices.js.gzip",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
   "private": true,
-  "keywords": ["Angular","Marvel Prototyping", "Device", "Mockup"],
+  "keywords": [
+    "Angular",
+    "Marvel Prototyping",
+    "Device",
+    "Mockup"
+  ],
   "author": "Andre Lehnert",
   "license": "MIT",
   "bugs": {
@@ -22,13 +29,15 @@
     "@angular/common": "7.2.0",
     "@angular/compiler": "7.2.0",
     "@angular/core": "7.2.0",
+    "@angular/elements": "7.2.0",
     "@angular/forms": "7.2.0",
     "@angular/platform-browser": "7.2.0",
     "@angular/platform-browser-dynamic": "7.2.0",
     "core-js": "2.6.5",
     "rxjs": "6.3.3",
     "tslib": "1.9.0",
-    "zone.js": "0.8.26"
+    "zone.js": "0.8.26",
+    "document-register-element": "1.7.2"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "0.13.0",
@@ -37,6 +46,7 @@
     "@angular/compiler-cli": "7.2.0",
     "@angular/language-service": "7.2.0",
     "@types/node": "8.9.4",
+    "@webcomponents/webcomponentsjs": "2.2.10",
     "ng-packagr": "4.2.0",
     "ts-node": "7.0.0",
     "tsickle": "0.34.0",
