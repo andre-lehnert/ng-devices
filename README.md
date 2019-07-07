@@ -87,4 +87,5 @@ Minimal HTML:
 
 ## angular-devices web component
 
-[Article 1](https://medium.com/@kitson.mac/wrapping-an-angular-app-in-a-custom-element-web-component-angular-element-in-4-simple-steps-ded3554e9006)
+- [Medium Article 1](https://medium.com/@kitson.mac/wrapping-an-angular-app-in-a-custom-element-web-component-angular-element-in-4-simple-steps-ded3554e9006)
+- [Medium Article 2](https://medium.com/@tomsu/building-web-components-with-angular-elements-746cd2a38d5b)
